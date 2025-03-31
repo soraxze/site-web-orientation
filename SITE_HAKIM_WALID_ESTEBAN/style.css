@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap') ;
+* {
+margin : 0;
+padding : 0;
+list-style : none;
+text-decoration : none;
+box-sizing : border-box;
+font-family : 'Poppins', sans-serif;
+}
+.mySlides {
+display : none;
+}
+img {
+vertical-align : middle;
+border-radius : 20px;
+}
+.slideshow-container {
+max-width : 1000px;
+position : relative;
+margin : auto;
+}
+.text {
+color : #000000;
+font-size : 20px;
+font-weight : bold;
+padding : 8px 12px;
+position : absolute;
+bottom : 8px;
+width : 100%;
+text-align : center;
+}
+.dot {
+height : 15px;
+width : 15px;
+margin : 0 2px;
+background-color : #bbb;
+border-radius : 50%;
+display : inline-block;
+transition : background-color 0.6s ease;
+}
+.active {
+background-color : #000000;
+}
+
+.cytech a {
+text-decoration : none;
+color : black;
+}
+.ece a {
+text-decoration : none;
+color : black;
+}
+.epita-paris a {
+text-decoration : none;
+color : black;
+}
+
+
+h2 {
+margin-top : 20px;
+text-align : center;
+color : #161616;
+text-decoration : underline;
+text-decoration-color : #ea0010;
+}
+
+.sidebar {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.sidebar :hover {
+    text-decoration: none;
+    color: #ea0010;
+}
+
+.main {
+text-align : center;
+}
+.transport-info {
+background-color : #fff;
+text-align : center;
+padding : 10px;
+border : #ccc solid 1px;
+margin-top : 10px;
+}
+footer {
+background-color : #333;
+color : #fff;
+text-align : center;
+padding : 10px;
+}
+.container {
+display : grid;
+grid-template-columns : repeat(12,1fr);
+}
+h4 {
+text-align : center;
+}
+h1 {
+text-align : center;
+}
+section h2 {
+color : #161616;
+text-decoration : underline;
+text-decoration-color : #ea0010;
+font-size : 1.7em;
+margin-bottom : 16px;
+transition : box-shadow 0.3s ease;
+}
+section .admission {
+text-align : center;
+margin-left : 10rem;
+}
+section h2:hover {
+box-shadow : 0 0 10px rgb(0, 0, 0, 0.3);
+}
+section .important {
+margin-left : 30rem;
+}
+nav a {
+text-decoration : none;
+color : #1a4f82;
+font-weight : bold;
+}
+nav a:hover {
+text-decoration : underline;
+}
+.introduction {
+font-size : 1.2em;
+margin-left : 30rem;
+}
+section iframe {
+width : 100%;
+height : 415px;
+width : 900px;
+border : none;
+transition : box-shadow 0.3s ease;
+margin-left : 30rem;
+}
+section iframe:hover {
+box-shadow : 0 0 20px rgb(0, 0, 0, 0.5);
+}
+section img {
+max-width : 35%;
+transition : transform 0.3s ease;
+display : block;
+margin : auto;
+}
+section img:hover {
+transform : scale(1.1);
+}
+.center-content {
+text-align : center;
+}
+#sommaire {
+text-align : center;
+margin : auto;
+max-width : 600px;
+}
+#sommaire h2 {
+text-align : center;
+}
+#sommaire ul {
+list-style-type : none;
+padding : 0;
+text-align : center;
+}
+#sommaire ul li {
+margin-bottom : 10px;
+text-align : center;
+transition : background-color 0.3s ease, transform 0.3s ease;
+}
+#sommaire ul li:hover {
+background-color : #ddd;
+transform : scale(1.05);
+}
+#sommaire ul li h2 a {
+text-align : center;
+color : #333;
+text-decoration : none;
+transition : color 0.3s ease;
+}
+#sommaire ul li h2 a:hover {
+color : red;
+}
+.left {
+margin-top : 10rem;
+height : 100%;
+grid-column : 1 / 4;
+padding : 50px;
+position : relative;
+z-index : 200;
+padding-top : 3rem;
+}
+.left h1 {
+font-weight : 500;
+font-size : 3rem;
+letter-spacing : -0.14rem;
+line-height : 1;
+margin-bottom : 20rem;
+}
+h3 {
+text-align : center;
+}
+.menu-item {
+transition : all 0.3s;
+}
+.menu-item:hover .drop-menu {
+display : block;
+transition : all 0.3s;
+}
+.ece {
+margin-bottom : 22rem;
+margin-top : 1rem;
+margin-left : 10rem;
+margin-right : -10rem;
+height : 100%;
+grid-column : 4 / 8;
+display : flex;
+gap : 1rem;
+text-align : center;
+}
+.epita-paris {
+margin-bottom : 22rem;
+margin-top : 1rem;
+margin-left : 10rem;
+margin-right : -10rem;
+height : 100%;
+grid-column : 4 / 8;
+display : flex;
+gap : 1rem;
+text-align : center;
+}
+.butinfo {
+margin-bottom : 22rem;
+margin-top : 1rem;
+margin-left : 10rem;
+margin-right : -10rem;
+height : 100%;
+grid-column : 4 / 8;
+display : flex;
+gap : 1rem;
+text-align : center;
+}
+.cytech {
+margin-bottom : 22rem;
+margin-top : 1rem;
+margin-left : 10rem;
+margin-right : -10rem;
+height : 100%;
+grid-column : 4 / 8;
+display : flex;
+gap : 1rem;
+text-align : center;
+}
+.right {
+height : 112%;
+grid-column : 4 / 13;
+padding : 50px;
+display : flex;
+gap : 2rem;
+}
+.video2 {
+text-align : center;
+padding : 50px;
+margin : 3rem;
+margin-bottom : 10rem;
+margin-top : 10rem;
+border-radius : 10px;
+color : rgb(0, 0, 0);
+}
+.video {
+text-align : center;
+background-color : rgb(0, 0, 1);
+padding : 50px;
+margin : 3rem;
+margin-bottom : 10rem;
+margin-top : 10rem;
+border-radius : 10px;
+color : white;
+}
+.item {
+background-position : center top;
+background-size : auto 100%;
+border-radius : 1rem;
+flex-grow : 1;
+transition : width 300ms ease;
+width : 33%;
+position : relative;
+margin-top : 150px;
+}
+
+.vert {
+position : absolute;
+bottom : 5rem;
+left : 0.5rem;
+color : rgb(0, 0, 0);
+transform : rotate(-90deg);
+font-size : 2rem;
+font-weight : bold;
+transition : opacity 300ms ease;
+}
+.horiz {
+display : flex;
+align-items : center;
+justify-content : space-between;
+color : rgb(0, 0, 0);
+font-size : 1.4rem;
+font-weight : bold;
+padding : 0 2rem;
+position : absolute;
+bottom : 2rem;
+width : 100%;
+opacity : 0;
+transition : opacity 300ms ease;
+}
+.main {
+margin-top : 10rem;
+}
+.menu-page {
+text-align : center;
+}
+.menu-page h1 {
+font-size : 2rem;
+font-weight : 500;
+}
+.menu-page ul {
+display : flex;
+align-items : center;
+margin : auto;
+justify-content : center;
+gap : 2rem;
+padding : 2rem;
+list-style : none;
+font-size : 0.8rem;
+}
+.menu-page ul li a {
+text-decoration : none;
+}
+.menu-page li :hover {
+text-decoration : underline;
+}
+header {
+height : 100vh;
+width : 100vh;
+}
+footer {
+background-color : #161616fa;
+color : white;
+text-align : center;
+padding : 10px;
+}
+.navbar .logo {
+font-weight : bold;
+font-size : 2rem;
+}
+.navbar :hover {
+color : red;
+text-decoration : none;
+transition : 0.5s;
+}
+.navbar {
+position : absolute;
+padding : 20px;
+display : flex;
+justify-content : space-between;
+width : 100%;
+font-size : 15px;
+position : relative;
+}
+.navbar .navlinks {
+display : flex;
+text-align : center;
+}
+.navbar a {
+text-decoration : none;
+color : rgb(0, 0, 0);
+padding : 10px 13px;
+border-radius : 5px;
+font-weight : 500;
+}
